@@ -17,7 +17,7 @@ const GPT4o: LLM = {
     outputCost: 15
   }
 }
-
+/*
 // GPT-4 Turbo (UPDATED 1/25/24)
 const GPT4Turbo: LLM = {
   modelId: "gpt-4-turbo-preview",
@@ -79,12 +79,12 @@ const GPT3_5Turbo: LLM = {
     inputCost: 0.5,
     outputCost: 1.5
   }
-}
+}*/
 
 export const OPENAI_LLM_LIST: LLM[] = [
-  GPT4o,
-  GPT4Turbo,
+  GPT4o
+  /*GPT4Turbo,
   GPT4Vision,
   GPT4,
-  GPT3_5Turbo
+  GPT3_5Turbo */
 ]

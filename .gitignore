@@ -28,6 +28,7 @@ yarn-error.log*
 # local env files
 .env
 .env*.local
+.code-workspace
 
 # vercel
 .vercel
@@ -44,3 +45,4 @@ sw.js
 sw.js.map
 workbox-*.js
 workbox-*.js.map
+

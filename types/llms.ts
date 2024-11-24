@@ -18,25 +18,21 @@ export type OpenAILLMID =
 
 // Google Models
 export type GoogleLLMID =
-  | "gemini-pro" // Gemini Pro
-  | "gemini-pro-vision" // Gemini Pro Vision
-  | "gemini-1.5-pro-latest" // Gemini 1.5 Pro
-  | "gemini-1.5-flash" // Gemini 1.5 Flash
+  | "gemini-1.5-flash-8b" // Gemini 1.5 Flash
+  | "gemini-1.5-flash-latest" // Gemini Pro
+  | "gemini-1.5-pro" // Gemini 1.5 Pro
 
 // Anthropic Models
 export type AnthropicLLMID =
-  | "claude-2.1" // Claude 2
-  | "claude-instant-1.2" // Claude Instant
   | "claude-3-haiku-20240307" // Claude 3 Haiku
-  | "claude-3-sonnet-20240229" // Claude 3 Sonnet
+  | "claude-3-5-haiku-20241022"
   | "claude-3-opus-20240229" // Claude 3 Opus
-  | "claude-3-5-sonnet-20240620" // Claude 3.5 Sonnet
+  | "claude-3-5-sonnet-20241022" // Claude 3.5 Sonnet
 
 // Mistral Models
 export type MistralLLMID =
-  | "mistral-tiny" // Mistral Tiny
-  | "mistral-small-latest" // Mistral Small
-  | "mistral-medium-latest" // Mistral Medium
+  | "open-mixtral-8x7b" // Mixtral
+  | "pixtral-large-latest" // Pixtral Large
   | "mistral-large-latest" // Mistral Large
 
 export type GroqLLMID =

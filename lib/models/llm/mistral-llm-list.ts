@@ -2,51 +2,23 @@ import { LLM } from "@/types"
 
 const MISTRAL_PLATORM_LINK = "https://docs.mistral.ai/"
 
-// Mistral Models (UPDATED 12/21/23) -----------------------------
-
-// Mistral 7B (UPDATED 12/21/23)
-const MISTRAL_7B: LLM = {
-  modelId: "mistral-tiny",
-  modelName: "Mistral Tiny",
+// Mixtral 8x7B (UPDATED 11/24/2024)
+const MIXTRAL_8X7B: LLM = {
+  modelId: "open-mixtral-8x7b",
+  modelName: "open-mixtral-8x7b",
   provider: "mistral",
-  hostedId: "mistral-tiny",
-  platformLink: MISTRAL_PLATORM_LINK,
-  imageInput: false
-}
-
-// Mixtral (UPDATED 12/21/23)
-const MIXTRAL: LLM = {
-  modelId: "mistral-small-latest",
-  modelName: "Mistral Small",
-  provider: "mistral",
-  hostedId: "mistral-small-latest",
+  hostedId: "open-mixtral-8x7b",
   platformLink: MISTRAL_PLATORM_LINK,
   imageInput: false,
   pricing: {
     currency: "USD",
     unit: "1M tokens",
-    inputCost: 2,
-    outputCost: 6
+    inputCost: 0.7,
+    outputCost: 0.7
   }
 }
 
-// Mistral Medium (UPDATED 12/21/23)
-const MISTRAL_MEDIUM: LLM = {
-  modelId: "mistral-medium-latest",
-  modelName: "Mistral Medium",
-  provider: "mistral",
-  hostedId: "mistral-medium-latest",
-  platformLink: MISTRAL_PLATORM_LINK,
-  imageInput: false,
-  pricing: {
-    currency: "USD",
-    unit: "1M tokens",
-    inputCost: 2.7,
-    outputCost: 8.1
-  }
-}
-
-// Mistral Large (UPDATED 03/05/24)
+// Mistral Large (UPDATED 11/24/2024)
 const MISTRAL_LARGE: LLM = {
   modelId: "mistral-large-latest",
   modelName: "Mistral Large",
@@ -57,14 +29,29 @@ const MISTRAL_LARGE: LLM = {
   pricing: {
     currency: "USD",
     unit: "1M tokens",
-    inputCost: 8,
-    outputCost: 24
+    inputCost: 2,
+    outputCost: 6
+  }
+}
+
+// Pixtral Large (UPDATED 11/24/2024)
+const PIXTRAL_LARGE: LLM = {
+  modelId: "pixtral-large-latest",
+  modelName: "Pixtral Large",
+  provider: "mistral",
+  hostedId: "pixtral-large-latest",
+  platformLink: MISTRAL_PLATORM_LINK,
+  imageInput: false,
+  pricing: {
+    currency: "USD",
+    unit: "1M tokens",
+    inputCost: 2,
+    outputCost: 6
   }
 }
 
 export const MISTRAL_LLM_LIST: LLM[] = [
-  MISTRAL_7B,
-  MIXTRAL,
-  MISTRAL_MEDIUM,
-  MISTRAL_LARGE
+  MIXTRAL_8X7B,
+  MISTRAL_LARGE,
+  PIXTRAL_LARGE
 ]

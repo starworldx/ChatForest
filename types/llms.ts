@@ -30,14 +30,10 @@ export type MistralLLMID =
   | "pixtral-large-latest" // Pixtral  |
   | "mistral-large-latest" // Mistral Large
 
-export type GroqLLMID =
-  | "llama-3.3-70b-versatile" // LLaMA3.3-70b
-  
-// Perplexity Models (UPDATED 1/31/24)
-export type PerplexityLLMID =
-  | "llama-3.1-sonar-huge-128k-online" // Perplexity Online 70B
-  | 
+export type GroqLLMID = "llama-3.3-70b-versatile" // LLaMA3.3-70b
 
+// Perplexity Models (UPDATED 1/31/24)
+export type PerplexityLLMID = "llama-3.1-sonar-huge-128k-online" // Perplexity Online 70B
 export interface LLM {
   modelId: LLMID
   modelName: string

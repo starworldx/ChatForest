@@ -18,22 +18,6 @@ const gpt4o: LLM = {
   }
 }
 
-// o1-preview (UPDATED 11/24/2024)
-const o1_preview: LLM = {
-  modelId: "o1-preview",
-  modelName: "o1-preview",
-  provider: "openai",
-  hostedId: "o1-preview",
-  platformLink: OPENAI_PLATORM_LINK,
-  imageInput: true,
-  pricing: {
-    currency: "USD",
-    unit: "1M tokens",
-    inputCost: 15.0,
-    outputCost: 60.0
-  }
-}
-
 // o1-mini (UPDATED 11/24/2024)
 const o1_mini: LLM = {
   modelId: "o1-mini",
@@ -66,4 +50,4 @@ const gpt_4o_mini: LLM = {
   }
 }
 
-export const OPENAI_LLM_LIST: LLM[] = [gpt_4o_mini, gpt4o, o1_mini, o1_preview]
+export const OPENAI_LLM_LIST: LLM[] = [gpt_4o_mini, gpt4o, o1_mini]

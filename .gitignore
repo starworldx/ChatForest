@@ -46,3 +46,4 @@ sw.js.map
 workbox-*.js
 workbox-*.js.map
 
+app/api/chat/azure/route.ts

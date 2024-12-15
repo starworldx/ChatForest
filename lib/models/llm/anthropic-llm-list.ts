@@ -4,9 +4,10 @@ const ANTHROPIC_PLATFORM_LINK =
   "https://docs.anthropic.com/claude/reference/getting-started-with-the-api"
 
 // Claude 3.5 Haiku (UPDATED 11/24/2024)
-const CLAUDE_3_5_HAIKU: LLM = {
+
+const CLAUDE_HAIKU: LLM = {
   modelId: "claude-3-5-haiku-latest",
-  modelName: "Claude 3.5 Haiku",
+  modelName: "claude_3_5_haiku_latest",
   provider: "anthropic",
   hostedId: "claude-3-5-haiku-latest",
   platformLink: ANTHROPIC_PLATFORM_LINK,
@@ -14,13 +15,12 @@ const CLAUDE_3_5_HAIKU: LLM = {
   pricing: {
     currency: "USD",
     unit: "1M tokens",
-    inputCost: 1.0,
-    outputCost: 5.0
+    inputCost: 1,
+    outputCost: 5
   }
 }
-
 // Claude 3.5 Sonnet (UPDATED 11/24/2024)
-const CLAUDE_3_5_SONNET: LLM = {
+const CLAUDE_SONNET: LLM = {
   modelId: "claude-3-5-sonnet-latest",
   modelName: "Claude 3.5 Sonnet",
   provider: "anthropic",
@@ -35,4 +35,4 @@ const CLAUDE_3_5_SONNET: LLM = {
   }
 }
 
-export const ANTHROPIC_LLM_LIST: LLM[] = [CLAUDE_3_5_HAIKU, CLAUDE_3_5_SONNET]
+export const ANTHROPIC_LLM_LIST: LLM[] = [CLAUDE_HAIKU, CLAUDE_SONNET]

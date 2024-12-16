@@ -1,8 +1,8 @@
 -- WORKSPACES
 
 UPDATE workspaces
-SET default_model = 'gpt-4-turbo-preview'
-WHERE default_model = 'gpt-4-1106-preview';
+SET default_model = 'gpt-4o'
+WHERE default_model = 'gpt-4o';
 
 UPDATE workspaces
 SET default_model = 'gpt-3.5-turbo'
@@ -11,8 +11,8 @@ WHERE default_model = 'gpt-3.5-turbo-1106';
 -- PRESETS
 
 UPDATE presets
-SET model = 'gpt-4-turbo-preview'
-WHERE model = 'gpt-4-1106-preview';
+SET model = 'gpt-4o'
+WHERE model = 'gpt-4o';
 
 UPDATE presets
 SET model = 'gpt-3.5-turbo'

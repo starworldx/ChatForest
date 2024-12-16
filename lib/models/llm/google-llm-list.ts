@@ -38,7 +38,7 @@ const GEMINI_1_5_FLASH_8B: LLM = {
   }
 }
 
-// Gemini 1.5 Pro Latest (UPDATED 05/28/24)
+// Gemini 1.5 Pro (UPDATED 05/28/24)
 //BEST FOR LONG CONTEXT, REASONING, MATH
 const GEMINI_1_5_PRO: LLM = {
   modelId: "gemini-1.5-pro",

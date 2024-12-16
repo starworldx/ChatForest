@@ -18,7 +18,7 @@ export type OpenAILLMID =
 export type GoogleLLMID =
   | "gemini-1.5-flash-8b" // Gemini 1.5 Flash
   | "gemini-1.5-flash-latest" // Gemini Pro
-  | "gemini-1.5-pro-latest" // Gemini 1.5 Pro
+  | "gemini-1.5-pro" // Gemini 1.5 Pro
 
 // Anthropic Models
 export type AnthropicLLMID =

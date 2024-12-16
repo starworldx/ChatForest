@@ -7,7 +7,7 @@ const ANTHROPIC_PLATFORM_LINK =
 
 const CLAUDE_HAIKU: LLM = {
   modelId: "claude-3-5-haiku-latest",
-  modelName: "claude_3_5_haiku_latest",
+  modelName: "claude 3.5 Haiku",
   provider: "anthropic",
   hostedId: "claude-3-5-haiku-latest",
   platformLink: ANTHROPIC_PLATFORM_LINK,

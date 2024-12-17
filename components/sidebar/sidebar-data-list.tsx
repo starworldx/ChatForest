@@ -35,11 +35,11 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
 }) => {
   const {
     setChats,
-    setPresets,
     setPrompts,
+    setPresets,
+    setAssistants,
     setFiles,
     setCollections,
-    setAssistants,
     setTools,
     setModels
   } = useContext(ChatbotUIContext)
@@ -134,22 +134,22 @@ export const SidebarDataList: FC<SidebarDataListProps> = ({
 
   const updateFunctions = {
     chats: updateChat,
-    presets: updatePreset,
     prompts: updatePrompt,
+    presets: updatePreset,
+    assistants: updateAssistant,
     files: updateFile,
     collections: updateCollection,
-    assistants: updateAssistant,
     tools: updateTool,
     models: updateModel
   }
 
   const stateUpdateFunctions = {
     chats: setChats,
-    presets: setPresets,
     prompts: setPrompts,
+    presets: setPresets,
+    assistants: setAssistants,
     files: setFiles,
     collections: setCollections,
-    assistants: setAssistants,
     tools: setTools,
     models: setModels
   }

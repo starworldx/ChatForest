@@ -17,11 +17,11 @@ export const Sidebar: FC<SidebarProps> = ({ contentType, showSidebar }) => {
   const {
     folders,
     chats,
-    presets,
     prompts,
+    presets,
+    assistants,
     files,
     collections,
-    assistants,
     tools,
     models
   } = useContext(ChatbotUIContext)
